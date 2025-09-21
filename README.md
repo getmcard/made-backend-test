@@ -198,12 +198,22 @@ curl -X POST http://localhost:9999/clients/1/transactions \
 curl http://localhost:9999/clients/6/statement
 ```
 
-### Performance Testing
-The Gatling simulation will:
-- Test concurrent transaction processing
-- Validate business rule consistency
-- Measure response times under load
-- Verify data integrity across concurrent operations
+### Performance Testing with Gatling Simulation
+
+**Run the simulation test:**
+```bash
+cd simulations
+mvn gatling:test -Dgatling.simulationClass=MadeBackendTestSimulation
+```
+
+**What the simulation tests:**
+- Concurrent transaction processing
+- Business rule consistency validation
+- Response times under load
+- Data integrity across concurrent operations
+- Error handling scenarios
+
+**Important**: Make sure your API is running on `http://localhost:9999` before starting the simulation!
 
 ### Troubleshooting Common Issues
 
