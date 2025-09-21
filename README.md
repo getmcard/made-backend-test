@@ -235,11 +235,13 @@ The Gatling simulation will:
 
 ## 📊 Performance Expectations
 
-Your implementation should handle:
-- **Concurrent users**: 220 debits/sec + 110 credits/sec + 10 statements/sec
+Your implementation should demonstrate:
 - **Response time**: Sub-second for most operations
 - **Data consistency**: Maintain correct balances under concurrent load
 - **Error handling**: Proper HTTP status codes and error responses
+- **Scalability**: Ability to handle the load patterns defined in the simulation
+
+The Gatling simulation will generate detailed performance reports showing your system's capabilities under various load conditions.
 
 ### Why Multiple Backend Instances?
 
