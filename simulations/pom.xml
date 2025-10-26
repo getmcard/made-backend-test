@@ -16,7 +16,8 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <gatling.version>3.9.5</gatling.version>
+        <gatling.version>3.14.7</gatling.version>
+        <gatling-maven-plugin.version>4.20.7</gatling-maven-plugin.version>
         <scala.version>2.13.11</scala.version>
         <scala.binary.version>2.13</scala.binary.version>
     </properties>
@@ -61,7 +62,7 @@
             <plugin>
                 <groupId>io.gatling</groupId>
                 <artifactId>gatling-maven-plugin</artifactId>
-                <version>${gatling.version}</version>
+                <version>${gatling-maven-plugin.version}</version>
                 <configuration>
                     <simulationClass>MadeBackendTestSimulation</simulationClass>
                 </configuration>
